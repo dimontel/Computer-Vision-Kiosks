@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+ <meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+ <!-- three.js library -->
+ <script src="js/three.js">
+ </script>
+ <!-- jsartookit -->
+ <script src="vendor/jsartoolkit5/build/artoolkit.min.js">
+ </script>
+ <script src="vendor/jsartoolkit5/js/artoolkit.api.js">
+ </script>
+ <!-- include threex.artoolkit -->
+ <script src="threex-artoolkitsource.js">
+ </script>
+ <script src="threex-artoolkitcontext.js">
+ </script>
+ <script src="threex-armarkercontrols.js">
+ </script>
+ <script>
+  THREEx.ArToolkitContext.baseURL = '/'
+ </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="css/skeleton.css" rel="stylesheet"/>
+  <link href="css/grid.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/homestyle.css" rel="stylesheet"/>
+  <link href="css/styleaimation.css" rel="stylesheet"/>
+  <link href="css/styleanimstruc.css" rel="stylesheet"/>
+  <link href="css/panel.css" rel="stylesheet"/>
+  <!--<link rel='stylesheet' media='screen and (min-width: 551px) and (max-width: 768px)' href='/css/desktop.css' />-->
+  <!--<link rel='stylesheet' media='screen and (max-width: 550px)' href='/css/mobile.css' />-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"/>
+  <title>
+   Michael Kozlowski - IXD Showcase
+  </title>
+  <style>
+   /*.show{background-color: #33C3F0;}*/ /*.show2{background: #d9ffd2;}*/ .cnt { text-align: center; } body { overflow: auto; } #panel { overflow: hidden; position: fixed; } .pdt { padding-top: 15px; }
+  </style>
+ </head>
+ <body>
+  <div class="grid-frame">
+   <div class="padding-med">
+   </div>
+   <div class="one-column four-wide">
+    <h1>
+     <img class="logo-icon" src="images/inter-circle-grey.png"/>
+     Michael Kozlowski
+    </h1>
+   </div>
+   <div class="padding-small">
+   </div>
+   <div class="one-column two-wide title-bump">
+    <h2 class="h2-profile">
+     Holo Photo Viewer
+    </h2>
+   </div>
+   <div class="one-column three-wide title-bump">
+    <h1 class="h1-profile">
+     looking for photos doesn't have to suck.
+    </h1>
+   </div>
+   <div class="padding-small">
+   </div>
+   <div class="one-column four-wide">
+    <img class="hero-image" src=" images/mkozlowski/2.jpg "/>
+   </div>
+   <div class="padding-med">
+   </div>
+   <div class="centercontent">
+    <div class="one-column one-wide">
+     <h2 class="h2-profile">
+      why?
+     </h2>
+     <p class="p-profile">
+      Spatial interfaces are said to be the next computing paradigm. But do they have any real advantages? I decided to explore different spatial UI concepts in the context of a photo viewing app to find out.
+     </p>
+    </div>
+    <div class="float-column two-wide no-clear">
+     <img class="image-1" src=" images/mkozlowski/3.png "/>
+    </div>
+   </div>
+   <div class="padding-small">
+   </div>
+   <div class="padding-small">
+   </div>
+   <div class="centercontent">
+    <div class="one-column two-wide no-clear">
+     <img class="image-2" src=" images/mkozlowski/4.jpg "/>
+    </div>
+    <div class="float-column one-wide no-clear">
+     <h2 class="h2-profile">
+      what?
+     </h2>
+     <p class="p-profile">
+      The Hololens Photo Viewer can be implemented on traditional 2D screens. However, adding depth into the design and having a much larger, windowless UI definitely makes it a kickass experience.
+     </p>
+    </div>
+   </div>
+   <div class="padding-small">
+   </div>
+   <div class="centercontent">
+    <div class="one-column one-wide">
+     <h2 class="h2-profile">
+      how?
+     </h2>
+     <p class="p-profile">
+      My research consisted of testing users on how they find and scan through photos, and if different spatial arrangements make their finding process more efficient. I also dove into various HCI publications to find best practises for designing spatial interfaces.
+     </p>
+    </div>
+    <div class="float-column two-wide no-clear">
+     <img class="image-3" src=" images/mkozlowski/5.jpg "/>
+    </div>
+   </div>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js">
+   </script>
+   <script src="js/index.js">
+   </script>
+   <script>
+    $(document).ready(function() { $(function() { var div = $('.hero-image'); var width = div.width(); div.css('height', (width * 0.5625)); }); $(function() { var div = $('.image-1'); var width = div.width(); div.css('height', (width * 0.8333)); }); $(function() { var div = $('.image-2'); var width = div.width(); div.css('height', (width * 0.6770)); }); $(function() { var div = $('.image-3'); var width = div.width(); div.css('height', (width * 0.6770)); }); }); $(window).resize(function() { $(function() { var div = $('.hero-image'); var width = div.width(); div.css('height', (width * 0.5625)); }); }); $(window).resize(function() { $(function() { var div = $('.image-1'); var width = div.width(); div.css('height', (width * 0.8333)); }); }); $(window).resize(function() { $(function() { var div = $('.image-2'); var width = div.width(); div.css('height', (width * 0.6770)); }); }); $(window).resize(function() { $(function() { var div = $('.image-3'); var width = div.width(); div.css('height', (width * 0.6770)); }); });
+   </script>
+   <script src=" js/kiosk19.js ">
+   </script>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,26 @@
+
+/*//BOTTOMBAR CODE-------------------------------------------------------------------------------------------*/
+
+/*body {*/
+    /*overflow: hidden;*/
+/*}*/
+
+
+
+#panel {
+    z-index: 9;
+    width:100%;
+    position: absolute;
+    background: #E1E1E1;
+    top: 94%;
+    bottom: 0;
+    height: 100vh;
+    /*padding: 1em;*/
+    transition: all 0.6s ease-out;
+
+}
+
+#panel.open {
+    z-index: 9;
+    top: 45%;
+}

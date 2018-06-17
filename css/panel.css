@@ -1,0 +1,99 @@
+
+/*//BOTTOMBAR CODE-------------------------------------------------------------------------------------------*/
+
+/*body {*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*  purple   6970C7
+    orange   F38770
+
+    */
+
+
+
+#panel {
+    z-index: 9;
+    width:100%;
+    position: absolute;
+    background: #ffffff;
+    top: 94%;
+    bottom: 0;
+    height: 100vh;
+    /*padding: 1em;*/
+    transition: all 0.6s ease-out;
+
+}
+
+#panel:hover{
+    background:#ffffff;
+}
+
+
+#alrt:hover{
+    background: rgba(153, 155, 255, 0.19);
+    -webkit-animation-delay: 2s;
+    cursor: pointer;
+    /*color: rgba(153, 155, 255, 0.19);*/
+}
+
+.alrt{
+    transition: background-color 0.5s ease;
+}
+
+
+a{text-decoration: none;
+color: black;}
+
+a:hover{
+    /*font-weight: 700;*/
+    color: black;
+
+}
+
+
+
+@media (min-width: 600px) {
+
+    #panel.open {
+        z-index: 9;
+        top: 45%;
+    }
+    .jst {
+        text-align: justify;
+    }
+    .mob{
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+
+    #panel.open {
+        z-index: 9;
+        top: 5%;
+        overflow-y: scroll;
+    }
+
+    .des{
+        display: none;
+    }
+    .mob{
+        /*background-color: #8DD3CF;*/
+    text-align: center;
+    }
+    .tra{color: transparent;}
+    .jst{
+        text-align: justify;
+        padding: 9vw;
+    }
+
+    .lft{
+        text-align: left;
+        padding: 9vw;
+    }
+
+
+}
+
+

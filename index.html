@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- three.js library -->
+<script src='js/three.js'></script>
+<!-- jsartookit -->
+<script src="vendor/jsartoolkit5/build/artoolkit.min.js"></script>
+<script src="vendor/jsartoolkit5/js/artoolkit.api.js"></script>
+<!-- include threex.artoolkit -->
+<script src="threex-artoolkitsource.js"></script>
+<script src="threex-artoolkitcontext.js"></script>
+<script src="threex-armarkercontrols.js"></script>
+
+<script>
+    THREEx.ArToolkitContext.baseURL = '/'
+
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="css/skeleton.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="css/homestyle.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styleaimation.css">
+    <link rel="stylesheet" href="css/styleanimstruc.css">
+
+
+    <!--<link rel='stylesheet' media='screen and (min-width: 551px) and (max-width: 768px)' href='/css/desktop.css' />-->
+    <!--<link rel='stylesheet' media='screen and (max-width: 550px)' href='/css/mobile.css' />-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+
+
+    <title>IXD Grad Showcase</title>
+</head>
+
+<body>
+
+    <section class="sec0">
+
+        <div class="row cntmd">
+            <div class="twelve columns cntmd dwn10">
+                <span style="text-align:center"> <img class="pshlft" src="images/intersection.png" width="50%"></span>
+                <br> <span style="text-align:center"> <img class="btm" onclick="scrollNext()" src="images/inter-circle.png" width="38vw"></span>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section id="desktop" class="sec1">
+
+        <div class="row pd">
+            <div class="one  column ">
+                <h2 class="dsp">.</h2>
+            </div>
+            <div class="five columns ">
+
+                <h1 data-scroll="toggle(.fromRightIn, .fromRightOut)"> Where design and technology meet, we see opportunity. </h1>
+
+            </div>
+            <div class="five  columns ">
+
+                <h2 class="dsp">.</h2>
+
+            </div>
+            <div class="one  column show">
+                <h2 class="dsp">.</h2>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="one  column ">
+                <h2 class="dsp">.</h2>
+            </div>
+            <div class="five  columns ">
+
+                <h2 class="dsp">.</h2>
+
+            </div>
+            <div class="three  columns ">
+
+                <p class="cntxt" data-scroll="toggle(.fromRightIn, .fromRightOut)"> Whether it’s in designing a barrier-free system for public transit, developing a voice platform that understands your goals, or filming an interactive narrative, we approach every problem through a multi-disciplinary lens. </p>
+
+            </div>
+            <div class="three  column ">
+                <h2 class="dsp">.</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!--<section id="mobile" class="sec1">-->
+
+    <!--<div class="row">-->
+
+    <!--<div class="twelve columns ">-->
+
+    <!--<h1 data-scroll="toggle(.fromRightIn, .fromRightOut)"> Where design and technology meet, we see opportunity. </h1>-->
+    <!--<p class="cntxt" data-scroll="toggle(.fromRightIn, .fromRightOut)"> Whether it’s in designing a barrier-free system-->
+    <!--for public transit,developing a voice platform that understands your goals, or filming an-->
+    <!--interactive narrative, we approach every problem through a multi-disciplinary lens. </p>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+
+    <!--</section>-->
+
+
+    <section id="sec3">
+
+        <div class="pd2">
+            <div class="row" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+                <div class="twelve columns cntmd">
+                    <img id="calendar-image" src="images/Calendar5.svg" width="40%">
+                    <br>
+                    <p class="cntmd2 clr">Wednesday, April 25th, 2018
+                        <br><span style="font-weight:700;"> 5:30pm - 9:00pm </span></p>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="ten columns dsp">.</div>
+                <div class="two columns ">
+                    <p class="cntmd2 clr">*Invite only
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <!--<div class="row" data-scroll="toggle(.fromTopIn, .fromTopOut)">-->
+            <!--<div class="twelve columns cntmd">-->
+            <!--<p class="cntmd2 clr">We Thank Our Sponsors</p>-->
+            <!--<br>-->
+            <!--<img id="calendar-image" src="images/sponsors.svg" width="40%">-->
+            <!--<br>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="sec1">
+
+
+        <br>
+
+
+        <div class="row" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+            <div class="twelve columns cntmd">
+                <!--<h1 class="cntmd2 clr">We thank our sponsors</h1>-->
+                <p class="cntmd3" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                    <br>
+                    <br>We thank our sponsors</p>
+
+                <img id="calendar-image" src="images/sponsors.svg" width="30%">
+                <br>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="js/ScrollTrigger.min.js"></script>
+
+
+    <script>
+        window.counter = function() {
+            // this refers to the html element with the data-scroll-showCallback tag
+            var span = this.querySelector('span');
+            var current = parseInt(span.textContent);
+
+            span.textContent = current + 1;
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var trigger = new ScrollTrigger({
+                addHeight: true
+            });
+        });
+
+
+        function scrollNext() {
+            console.log('im triggered');
+            var desktop = $("#desktop").css('display');
+            if (desktop == 'block') {
+                console.log('desktop is displayed');
+                $('html, body').animate({
+                    scrollTop: $("#desktop").offset().top
+                }, 1000);
+            } else if (desktop == 'none') {
+                console.log('desktop is not displayed');
+                $('html, body').animate({
+                    scrollTop: $("#sec3").offset().top
+                }, 1000);
+            }
+        }
+
+    </script>
+
+
+    <script src="kiosk-index.js"></script>
+</body>
+
+</html>

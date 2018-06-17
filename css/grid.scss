@@ -1,0 +1,184 @@
+ //MIXINS
+ @mixin pos-rel-left {
+     position: relative;
+     float: left;
+ }
+
+ @media (min-width: 600px) {
+     //GRID-------------------------------------------------------------------------------------------------------------------------
+     .grid-frame {
+         width: calc(100vw - 140px);
+         position: relative;
+         left: 50%;
+         top: 0;
+         transform: translateX(-50%);
+     }
+
+     .one-column {
+         @include pos-rel-left;
+         left: 0;
+         clear: left;
+     }
+
+     .two-column {
+         @include pos-rel-left;
+         left: 25.5%;
+         clear: left;
+     }
+
+     .three-column {
+         @include pos-rel-left;
+         left: 51%;
+         clear: left;
+     }
+
+     .four-column {
+         @include pos-rel-left;
+         left: 76.5%;
+         clear: left;
+     }
+
+     .float-column {
+         @include pos-rel-left;
+         margin-right: 2%;
+     }
+
+     .no-clear {
+         clear: none !important;
+     }
+
+     #grid-frame .float-column:nth-child(4n) {
+         margin-right: 0;
+     }
+
+     .one-wide {
+         width: 23.5%;
+     }
+
+     .two-wide {
+         width: 49%;
+     }
+
+     .three-wide {
+         width: 74.5%;
+     }
+
+     .four-wide {
+         width: 100%;
+     } //PADDING-------------------------------------------------------------------------------------------------------------------------
+     .padding-small {
+         @include pos-rel-left;
+         width: 100%;
+         height: 20px;
+     }
+
+     .padding-med {
+         @include pos-rel-left;
+         width: 100%;
+         height: 40px;
+     }
+
+     .padding-large {
+         @include pos-rel-left;
+         width: 100%;
+         height: 60px;
+     }
+     .padding-xlarge {
+         @include pos-rel-left;
+         width: 100%;
+         height: 90px;
+     }
+ }
+
+ @media (max-width: 599px) {
+     //GRID-------------------------------------------------------------------------------------------------------------------------
+     .grid-frame {
+         width: calc(100vw - 60px);
+         position: relative;
+         left: 50%;
+         top: 0;
+         transform: translateX(-50%);
+     }
+
+     .one-column {
+         @include pos-rel-left;
+         left: 0;
+         clear: left;
+     }
+
+     .two-column {
+         @include pos-rel-left;
+         left: 0;
+         clear: left;
+     }
+
+     .three-column {
+         @include pos-rel-left;
+         left: 51%;
+         clear: left;
+     }
+
+     .four-column {
+         @include pos-rel-left;
+         left: 51%;
+         clear: left;
+     }
+
+     .float-column {
+         @include pos-rel-left;
+         margin-right: 2%;
+     }
+
+     .no-clear {
+         clear: none !important;
+     }
+
+     #grid-frame .float-column:nth-child(2n) {
+         margin-right: 0;
+     }
+
+     .one-wide {
+         width: 49%;
+     }
+
+     .two-wide {
+         width: 49%;
+     }
+
+     .three-wide {
+         width: 100%;
+     }
+
+     .four-wide {
+         width: 100%;
+     }
+
+     .full-mobile {
+         width: 100% !important;
+     }
+     .no-mobile {
+         display: none !important;
+     } //PADDING-------------------------------------------------------------------------------------------------------------------------
+     .padding-small {
+         @include pos-rel-left;
+         width: 100%;
+         height: 20px;
+     }
+
+     .padding-med {
+         @include pos-rel-left;
+         width: 100%;
+         height: 40px;
+     }
+
+     .padding-large {
+         @include pos-rel-left;
+         width: 100%;
+         height: 60px;
+     }
+     .padding-xlarge {
+         @include pos-rel-left;
+         width: 100%;
+         height: 90px;
+     }
+ }

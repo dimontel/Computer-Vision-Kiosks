@@ -1,0 +1,52 @@
+/* line 2, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+body, html {
+  margin: 0;
+  padding: 0; }
+
+/* line 13, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+body {
+  background: #a9a9a9; }
+
+/* line 17, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+.sidebar {
+  transition: .5s all ease;
+  width: 320px;
+  position: fixed;
+  right: -400px;
+  height: calc(100vh - 40px);
+  background: #FFFFFF;
+  padding: 20px 40px;
+  z-index: 10; }
+
+/* line 28, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+#connect-frame {
+  margin-top: 6vh;
+  width: 100%;
+  height: 50vh;
+  border-top: 1px solid #777777;
+  overflow-y: scroll; }
+
+/* line 36, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+.tile {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #FF0000; }
+
+/* line 44, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+.connect-tile {
+  width: 100%;
+  height: 8vh;
+  line-height: 8vh;
+  border-bottom: 1px solid #777777; }
+
+/* line 51, /Users/michaelgingras/Documents/School/Portfolio : Grad Show/Web Committee/ixdshowcase2018/sitelarge.scss */
+.star {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: #123456;
+  display: none; }
+
+/*# sourceMappingURL=sitelarge.css.map */
